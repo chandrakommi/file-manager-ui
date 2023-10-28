@@ -1,5 +1,11 @@
+import Homepage from './pages/Homepage/Homepage'
+
 const App = () => {
-  return <div className=''>App Component</div>
+  return (
+    <>
+      <Homepage />
+    </>
+  )
 }
 
 export default App
