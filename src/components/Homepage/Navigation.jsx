@@ -1,20 +1,22 @@
+import { Link } from 'react-router-dom'
+
 const Navigation = () => {
   return (
     <>
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-        <a className='navbar-brand ms-5' href='/'>
+        <Link to='/' className='navbar-brand ms-5'>
           File Manager
-        </a>
+        </Link>
         <ul className='navbar-nav ms-auto me-5'>
           <li className='nav-item mx-2 '>
-            <a className='nav-link' href='/login'>
+            <Link to={'/login'} className='btn text-light'>
               Login
-            </a>
+            </Link>
           </li>
           <li className='nav-item'>
-            <a className='nav-link btn btn-success btn-sm' href='/register'>
+            <Link to={'/register'} className='btn btn-success '>
               Register
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

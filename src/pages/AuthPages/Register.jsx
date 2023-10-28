@@ -1,10 +1,20 @@
 import { RegisterForm } from '../../components/Auth'
-
+import { Link } from 'react-router-dom'
 const Register = () => {
   return (
     <>
-      <h1 className='display-1 '>Login</h1>
-      <RegisterForm />
+      <div className='d-flex justify-content-center pt-3 pt-sm-5 pt-lg-5'>
+        <div className='col-sm-12 col-md-6 col-lg-4 col-xl-4'>
+          <div className='card p-3'>
+            <div className='display-6 text-center'>Create Account here</div>
+            <hr></hr>
+            <RegisterForm />
+            <p className='ms-auto'>
+              Already have an account? &nbsp;<Link to='/login'> login</Link>
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
