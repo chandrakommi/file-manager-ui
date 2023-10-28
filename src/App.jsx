@@ -1,11 +1,20 @@
-import Homepage from './pages/Homepage/Homepage'
+import { Route, Routes } from 'react-router-dom'
+import { Homepage } from './pages/Homepage/Homepage'
+import { Navigation } from './components/Homepage'
+import Login from './pages/AuthPages/Login'
+import Register from './pages/AuthPages/Register'
 
-const App = () => {
+export const App = () => {
   return (
     <>
-      <Homepage />
+      <Navigation />
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+      </Routes>
     </>
   )
 }
 
-export default App
+// export default App
