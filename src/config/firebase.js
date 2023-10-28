@@ -1,12 +1,12 @@
 import firebase from 'firebase/compat/app'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBGLPOLNThvSLp__thrbLkBqazp-JqaVMY',
-  authDomain: 'react-files-manager.firebaseapp.com',
-  projectId: 'react-files-manager',
-  storageBucket: 'react-files-manager.appspot.com',
-  messagingSenderId: '859840253189',
-  appId: '1:859840253189:web:4b40233922e49d3db1fb6c',
-}
+  apiKey: "AIzaSyBoE8fGTC3cpvxdubYzmMe4JeDp67X-SMs",
+  authDomain: "react18-file-manager.firebaseapp.com",
+  projectId: "react18-file-manager",
+  storageBucket: "react18-file-manager.appspot.com",
+  messagingSenderId: "596314267378",
+  appId: "1:596314267378:web:2c15eb665612b124fefa6b"
+};
 
 const fire = firebase.initializeApp(firebaseConfig)
